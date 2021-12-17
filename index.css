@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-align: center;
+    --main-color: #fc211b;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* NavBar */
+.navbar {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 1px 3px 0px #a4a4a4;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    width: 50%;
+    margin: auto;
+    text-transform: uppercase;
+}
+.navbar ul li {
+    width: 25%;
+    overflow: hidden;
+    text-align: center;
+    padding: 16px 0;
+}
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #888;
+    transition: color ease-in-out 0.2s;
+}
+.navbar ul li a:hover {
+    color: var(--main-color);
+}
+/* Name */
+.name {
+    background-color: var(--main-color);
+    margin-top: 50px;
+    text-transform: uppercase;
+    padding: 115px 15px;
+}
+.name h3,.name p {
+    color: #fefefe;
+    font-weight: 100;
+}
+.name h3 {
+    font-size: 0.95em;
+}
+.name h1 {
+    color: #fff;
+    font-size: 3em;
+}
+.name p {
+    font-size: 0.75em;
+}
+/* About */
+#about {
+    background-color: #fbfbfb;
+}
+.container {
+    max-width: 800px;
+    padding: 30px 12px;
+    margin: auto;
+}
+#about h1 {
+    color: #666;
+}
+.upper {
+    text-transform: uppercase;
+}
+#about p {
+    color: #888;
+    line-height: 25px;
+}
+#about p:first-of-type {
+    margin-block: 15px 0;
+}
+/* Experience */
+#exper .container > h1 {
+    color: #666;
+    margin-bottom: 10px;
+}
+#exper .container > div > h2 {
+    color: var(--main-color);
+    margin-block: 12px;
+}
+#exper .container > div > p {
+    color: #c8c8c8;
+}
+/* Contact Me */
+#contact {
+    background-color: var(--main-color);
+}
+#contact .container > h1 {
+    color: #fff;
+    margin-bottom: 12px;
+}
+#contact .container form {
+    width: 50%;
+    margin: auto;
+}
+#contact .container form input,#contact .container form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 6px;
+    border-radius: 25px;
+    border: 1px solid #eee;
+    outline: none;
+    padding: 6px 5px;
+    font-size: 13px;
+    color: #888;
+}
+#contact .container form input::placeholder,#contact .container form textarea::placeholder {
+    font-size: 12px;
+    color: rgb(189, 189, 189);
+}
+#contact .container form input[type="submit"] {
+    background-color: #341107;
+    border: none;
+    text-transform: uppercase;
+    color: #bdbdbd;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+/* Footer */
+.footer {
+    padding: 17.5px 15px;
+}
+.footer p {
+    color: #777;
+}
